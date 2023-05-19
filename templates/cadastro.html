@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar aluno</title>
+</head>
+<body>
+    <h1>Cadastro de aluno</h1>
+    <hr>
+    <form action="{{ url_for('cadastro') }}" method="POST">
+        <table>
+            <tr>
+                <td>CPF</td>
+                <td><input type="text" name="_cpf"></td>
+            </tr>
+            <tr>
+                <td>Nome</td>
+                <td><input type="text" name="nome"></td>
+            </tr>
+            <tr>
+                <td>Data_Nascimento</td>
+                <td><input type="text" name="data_nasc"></td>
+            </tr>
+            <tr>
+                <td>Sexo</td>
+                <td><input type="text" name="sexo"></td>
+            </tr>
+            <tr>
+                <td>Idade</td>
+                <td><input type="text" name="idade"></td>
+            </tr>
+            <tr>
+                <td>AV1</td>
+                <td><input type="text" name="av1"></td>
+            </tr>
+            <tr>
+                <td>AV2</td>
+                <td><input type="text" name="av2"></td>
+            </tr>
+            <tr>
+                <td>Média</td>
+                <td><input type="text" name="media"></td>
+            </tr>
+        </table><br>
+        <input type="submit" value="Cadastrar">
+        <a href="/">Voltar</a>
+    </form>
+</body>
+</html>

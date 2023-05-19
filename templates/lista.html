@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de alunos</title>
+</head>
+<body>
+    <h1>Lista de alunos</h1>
+    <hr>
+    <table border=4>
+        <tr>
+            <td>CPF</td>
+            <td>Nome</td>
+            <td>Data_Nascimento</td>
+            <td>Sexo</td>
+            <td>Idade</td>
+            <td>Av1</td>
+            <td>av2</td>
+            <td>Média</td>
+            <td>Excluir</td>
+            <td>Atualizar</td>
+        </tr>
+        {% for aluno in alunos %}
+            <tr>
+                <td>{{ aluno._cpf }}</td>
+                <td>{{ aluno.nome }}</td>
+                <td>{{ aluno.data_nasc }}</td>
+                <td>{{ aluno.sexo}}</td>
+                <td>{{ aluno.idade}}</td>
+                <td>{{ aluno.av1}}</td>
+                <td>{{ aluno.av2}}</td>
+                <td>{{ aluno.media}}</td>
+                <td><a href="/excluir/{{ aluno._cpf }}">Excluir</a></td>
+                <td><a href="/atualizar/{{ aluno._cpf }}">Atualizar</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Voltar</a>
+</body>
+</html>

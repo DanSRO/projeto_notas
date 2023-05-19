@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atualizar Aluno</title>
+</head>
+<body>
+    <h1>Atualizar aluno</h1>
+    <hr>
+    <form action="" method="POST">
+        <table>
+            <tr>
+                <td>CPF</td>
+                <td><input type="text" name="cpf" value="{{ aluno._cpf }}"></td>
+            </tr>
+            <tr>
+                <td>Nome</td>
+                <td><input type="text" name="nome" value="{{ aluno.nome }}"></td>
+            </tr>
+            <tr>
+                <td>Data_Nascimento</td>
+                <td><input type="text" name="data_nasc" value="{{ aluno.data_nasc }}"></td>
+            </tr>
+            <tr>
+                <td>Sexo</td>
+                <td><input type="text" name="sexo" value="{{ aluno.sexo }}"></td>
+            </tr>
+            <tr>
+                <td>Idade</td>
+                <td><input type="text" name="idade" value="{{ aluno.idade }}"></td>
+            </tr>
+            <tr>
+                <td>AV1</td>
+                <td><input type="text" name="av1" value="{{ aluno.av1 }}"></td>
+            </tr>
+            <tr>
+                <td>AV2</td>
+                <td><input type="text" name="av2" value="{{ aluno.av2 }}"></td>
+            </tr>
+            <tr>
+                <td>Média</td>
+                <td><input type="text" name="media" value="{{ aluno.media }}"></td>
+            </tr>
+        </table><br>
+        <input type="submit" value="Atualizar">
+        <a href="/">Voltar</a>
+    </form>
+</body>
+</html>
