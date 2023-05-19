@@ -47,11 +47,11 @@ def cadastro():
         _cpf = request.form.get("cpf")
         nome = request.form.get("nome")
         data_nasc = request.form.get("data_nasc")
-        sexo = request.form.get("nome")
-        idade = request.form.get("nome")
-        av1 = request.form.get("nome")
-        av2 = request.form.get("nome")
-        media = request.form.get("email")
+        sexo = request.form.get("sexo")
+        idade = request.form.get("idade")
+        av1 = request.form.get("av1")
+        av2 = request.form.get("av2")
+        media = request.form.get("media")
 
         if (_cpf and nome and data_nasc and sexo and idade and av1 and av2 and media ):
             f = Aluno(_cpf, nome, data_nasc, sexo, idade, av1, av2, media)
@@ -88,8 +88,7 @@ def atualizar(cpf):
         idade = request.form.get("idade")
         av1 = request.form.get("av1")
         av2 = request.form.get("av2")
-        media = request.form.get("media")
-        nome = request.form.get("nome")
+        media = request.form.get("media")        
 
         if (_cpf and nome and data_nasc and sexo and idade and av1 and av2 and media ):
             aluno._cpf = cpf
